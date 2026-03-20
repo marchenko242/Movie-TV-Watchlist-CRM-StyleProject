@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        form {
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid #b6aeae;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 220px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form>
+            <h2>Sign Up</h2>
+
+            <input type="text" placeholder="First Name" id="firstName">
+            <input type="text" placeholder="Last Name" id="lastName">
+            <input type="email" placeholder="Email" id="email">
+            <input type="tel" placeholder="Phone Number" id="phoneNumber">
+            <select name="role" id="role">
+                <option value="">Select your role</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Manager">Manager</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Confirm Password" id="confirmPassword">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+
+    <script src="./signUp.js"></script>
+
+
+
+</body>
+
+</html>
