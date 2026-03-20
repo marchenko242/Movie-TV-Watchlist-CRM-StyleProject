@@ -2,4 +2,112 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   background-color: #2b364a;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background-color: #262d3f;
+  width: 1500px;
+  height: 700px;
+  margin-top: 100px;
+  border-radius: 15px;
+}
+.main .head-part-sect {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a222f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main .head-part-sect h1 {
+  color: white;
+  margin-left: 40px;
+  font-size: 30px;
+}
+.main .head-part-sect div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 40px;
+}
+.main .head-part-sect div button {
+  background-color: #262d3f;
+  border-style: none;
+  padding: 10px 25px 10px 25px;
+  color: rgb(73, 73, 73);
+  border-radius: 10px;
+  font-size: 18px;
+}
+.main .head-part-sect div .log-in-btn {
+  background-color: rgb(158, 86, 86);
+}
+.main .head-part-sect div .sign-up-btn {
+  background-color: rgb(108, 113, 155);
+}
+.main .bottom-part-header-sect {
+  background-color: #1e2530;
+  display: flex;
+  gap: 450px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+.main .bottom-part-header-sect .info-div .info-text-div {
+  display: flex;
+  gap: 25px;
+  margin-left: 40px;
+}
+.main .bottom-part-header-sect .info-div .info-text-div p {
+  color: rgb(206, 206, 206);
+}
+.main .bottom-part-header-sect .info-div .info-btn-div {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.main .bottom-part-header-sect .info-div .info-btn-div button {
+  background-color: rgb(56, 56, 71);
+  border-style: none;
+  color: white;
+  width: 110px;
+  height: 35px;
+  font-size: 16px;
+}
+.main .bottom-part-header-sect .search-div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.main .bottom-part-header-sect .search-div button {
+  background-color: #2765b7;
+  border-style: none;
+  width: 140px;
+  height: 40px;
+  font-size: 19px;
+  color: white;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  margin-top: 10px;
+}
+.main .bottom-part-header-sect .search-div .search-input-div {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.main .bottom-part-header-sect .search-div .search-input-div div {
+  background-color: #262d3f;
+  border: 1px solid grey;
+}
+.main .bottom-part-header-sect .search-div .search-input-div div input {
+  background-color: #262d3f;
+  border-style: none;
+  outline-style: none;
+  color: grey;
+  font-size: 20px;
+  height: 40px;
+}
+.main .bottom-part-header-sect .search-div .search-input-div select {
+  background-color: #262d3f;
+  color: white;
+  font-size: 20px;
+  width: 120px;
 }
