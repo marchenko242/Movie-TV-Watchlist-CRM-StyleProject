@@ -12,20 +12,137 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            
+    <main class="main">
+        <section class="head-part-sect">
+            <h1>Movie CRM</h1>
+            <div>
+                <button class="log-in-btn">Log In</button>
+                <button class="sign-up-btn">Sign Up</button>
+            </div>
         </section>
-        <section>
-
+        <section class="bottom-part-header-sect">
+            <div class="info-div">
+                <div class="info-text-div">
+                    <p>Total: 24</p>
+                    <p>Completed: 8</p>
+                    <p>Watching: 10</p>
+                    <p>To Watch: 6</p>
+                </div>
+                <div class="info-btn-div">
+                    <button>All</button>
+                    <button>Movies</button>
+                    <button>TV Shows</button>
+                    <button>Completed</button>
+                    <button>Watching</button>
+                </div>
+            </div>
+            <div class="search-div">
+                <button>+ Add Record</button>
+                <div class="search-input-div">
+                    <div>
+                        <img src="" alt="">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <select name="" id="" required>
+                        <option value="" disabled selected hidden>Sort: A-Z</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                    </select>
+                </div>
+            </div>
         </section>
-    </header>
-    <main>
-
+        <p>Card View</p>
+        <section class="cards-sect">
+            <div class="card-div">
+                <img src="" alt="">
+                <p>Inception</p>
+                <button class="card-edit-btn"><img src="" alt=""> Edit</button>
+                <button class="card-delete-btn"><img src="" alt=""> Delete</button>
+            </div>
+            <div class="card-div">
+                <img src="" alt="">
+                <p>Breaking Bad</p>
+                <button class="card-edit-btn"><img src="" alt=""> Edit</button>
+                <button class="card-delete-btn"><img src="" alt=""> Delete</button>
+            </div>
+            <div class="card-div">
+                <img src="" alt="">
+                <p>A Quiet Place</p>
+                <button class="card-edit-btn"><img src="" alt=""> Edit</button>
+                <button class="card-delete-btn"><img src="" alt=""> Delete</button>
+            </div>
+        </section>
+        <section class="table-sect">
+            <button>Table View</button>
+            <table>
+                <tr class="main-table-tr">
+                    <td>Title</td>
+                    <td>Type</td>
+                    <td>Genre</td>
+                    <td>Status</td>
+                    <td>Rating</td>
+                </tr>
+                <tr class="inception-table-tr">
+                    <td>Inception</td>
+                    <td>Movie</td>
+                    <td>Sci-Fi</td>
+                    <td>Completed</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="breakingBad-table-tr">
+                    <td>Breaking Bad</td>
+                    <td>TV Show</td>
+                    <td>Drama</td>
+                    <td>Watching</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="aQuietPlace-table-tr">
+                    <td>A Quiet Place</td>
+                    <td>Movie</td>
+                    <td>Harror</td>
+                    <td>Want to Watch</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </table>
+            <p>No records found</p>
+        </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 
 </html>
