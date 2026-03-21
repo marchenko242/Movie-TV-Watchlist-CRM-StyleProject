@@ -1,0 +1,35 @@
+# Movie CRM Project - Technical JS Tasks
+
+## 1. Authentication & Session Management
+- [ ] Implement logout functionality (Clear sessionStorage and redirect to Login).
+- [ ] Protect index.html (Redirect to login.html if no "currentUser" is found in session).
+- [ ] Personalize Dashboard (Show "Welcome, [User Name]" using session data).
+
+## 2. Record Management (The "CRM" Core)
+- [ ] Create `storage.js` to handle all LocalStorage operations (save, get, update, delete).
+- [ ] Implement Add Record (Form in add.html):
+    - [ ] Dependent Fields logic (Show Rating/Notes only when Status = Completed).
+    - [ ] Input Validation (Title required, Genre selection, Number range for Rating).
+    - [ ] Data Modeling (Generate unique IDs using crypto.randomUUID()).
+- [ ] Implement Edit Record (edit.html):
+    - [ ] URL Parameter handling (Get ID from `?id=...`).
+    - [ ] Pre-fill form with existing data.
+    - [ ] Update existing object in LocalStorage instead of creating new.
+- [ ] Implement Delete Record (Confirmation dialog before removing from storage).
+
+## 3. Data Visualization & UI
+- [ ] Implement Dashboard Rendering (`ui.js`):
+    - [ ] Loop through storage and create HTML cards or table rows.
+    - [ ] Empty State (Show message if no records found).
+- [ ] Statistics Engine:
+    - [ ] Calculate "Total Movies", "Completed", and "Average Rating" dynamically.
+
+## 4. Search, Filter & Sort
+- [ ] Search Bar: Live filtering of the list as the user types.
+- [ ] Status Filters: Buttons to show only "Watching" or "Completed" records.
+- [ ] Sorting: Sort by "Recently Added" or "Highest Rated".
+
+## 5. Advanced CRM Logic
+- [ ] Form Locking: Disable the "Title" and "Type" fields once a record is marked as "Completed" to prevent accidental changes.
+- [ ] Error Handling: Show inline error messages under form fields instead of using `alert()`.
+- [ ] Responsive UI updates: Update the list without a full page refresh when a record is deleted or updated.
