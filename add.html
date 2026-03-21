@@ -17,7 +17,6 @@
 
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title">
-            <span>This field is required</span>
             <br><br>
 
             <label>Type:</label><br>
@@ -45,23 +44,26 @@
             <label for="status">Status:</label><br>
             <select id="status" name="status">
                 <option value="completed">Completed</option>
-                <option value="watching">Watching</option>
+                <option value="watching" selected>Watching</option>
                 <option value="planned">Planned</option>
             </select>
             <br><br>
 
-            <label>Rating:</label><br>
-            <input type="radio" name="rating" value="1">1
-            <input type="radio" name="rating" value="2">2
-            <input type="radio" name="rating" value="3">3
-            <input type="radio" name="rating" value="4">4
-            <input type="radio" name="rating" value="5">5
-            <br><br>
+            <!-- Dependent Fields Wrapper -->
+            <div id="dependentFields" style="display: none;">
+                <label>Rating:</label><br>
+                <input type="radio" name="rating" value="1">1
+                <input type="radio" name="rating" value="2">2
+                <input type="radio" name="rating" value="3">3
+                <input type="radio" name="rating" value="4">4
+                <input type="radio" name="rating" value="5">5
+                <br><br>
 
-            <label for="review">Review / Notes:</label><br>
-            <textarea id="review" name="review" maxlength="500"></textarea>
-            <br>
-            <small>Maximum 500 characters</small>
+                <label for="review">Review / Notes:</label><br>
+                <textarea id="review" name="review" maxlength="500"></textarea>
+                <br>
+                <small>Maximum 500 characters</small>
+            </div>
         </fieldset>
 
         <br>
@@ -72,7 +74,7 @@
     </form>
 
 
-    <script src="./js/add.js"></script>
+    <script type="module" src="./js/add.js"></script>
 </body>
 
 </html>
