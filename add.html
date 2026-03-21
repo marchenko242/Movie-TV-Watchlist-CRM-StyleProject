@@ -11,6 +11,66 @@
 <body>
 
 
+    <form>
+        <fieldset>
+            <legend>Basic Info</legend>
+
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title">
+            <span>This field is required</span>
+            <br><br>
+
+            <label>Type:</label><br>
+            <input type="radio" id="movie" name="type" value="movie">
+            <label for="movie">Movie</label>
+
+            <input type="radio" id="tvshow" name="type" value="tvshow">
+            <label for="tvshow">TV Show</label>
+            <br><br>
+
+            <label for="genre">Genre:</label><br>
+            <select id="genre" name="genre">
+                <option value="">Select Genre</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Status Info</legend>
+
+            <label for="status">Status:</label><br>
+            <select id="status" name="status">
+                <option value="completed">Completed</option>
+                <option value="watching">Watching</option>
+                <option value="planned">Planned</option>
+            </select>
+            <br><br>
+
+            <label>Rating:</label><br>
+            <input type="radio" name="rating" value="1">1
+            <input type="radio" name="rating" value="2">2
+            <input type="radio" name="rating" value="3">3
+            <input type="radio" name="rating" value="4">4
+            <input type="radio" name="rating" value="5">5
+            <br><br>
+
+            <label for="review">Review / Notes:</label><br>
+            <textarea id="review" name="review" maxlength="500"></textarea>
+            <br>
+            <small>Maximum 500 characters</small>
+        </fieldset>
+
+        <br>
+
+        <button type="reset">Cancel</button>
+        <button type="submit">Save Record</button>
+
+    </form>
+
 
     <script src="./js/add.js"></script>
 </body>
